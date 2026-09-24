@@ -1,23 +1,22 @@
-// importar o componente que controla a navegação (rotas)
-import{ Stack } from 'expo-router';
+// Importar o componente que controla a navegação (rotas)
+import { Stack } from 'expo-router';
 
-export default function Layout( ){
+export default function Layout( ) {
   return(
     <Stack>
       <Stack.Screen
       name='index'
       options={{
-        title: "Agendador de Tarefas",
+        title:  "Agendador de Tarefas",
       }}
       />
 
-       <Stack.Screen
+      <Stack.Screen
       name='nova-tarefa'
       options={{
-        title:"Nova Tarefa",
+        title: "Nova Tarefa",
       }}
       />
     </Stack>
   );
-  
-}
+};
